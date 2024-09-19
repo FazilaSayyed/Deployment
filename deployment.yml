@@ -26,7 +26,7 @@ spec:
                     protocol: TCP
    selector:
       matchLabels:
-        app: todoappc                  
+        app: todoapp                
 
 
 ---
