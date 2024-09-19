@@ -2,8 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
    name: todoapp
-     labels:
-        app: todoapp
+   labels:
+      app: todoapp
 spec:
    replicas: 14
    strategy: 
@@ -14,7 +14,7 @@ spec:
    template:
         metadata:
             name: todoapp
-             labels: 
+            labels: 
                app: todoapp      
         spec:
           containers:
