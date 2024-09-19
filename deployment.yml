@@ -19,7 +19,7 @@ spec:
         spec:
           containers:
               - name: todocontainer
-                image: fazilasayyed/todo:latest
+                image: fazilasayyed/todo:v1
                 ports:
                   - name: http
                     containerPort: 80
