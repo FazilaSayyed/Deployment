@@ -23,7 +23,11 @@ spec:
                 ports:
                   - name: http
                     containerPort: 80
-                    protocol: TCP   
+                    protocol: TCP
+   selector:
+      matchLabels:
+        app: todoappc                  
+
 
 ---
 apiVersion: v1
@@ -34,10 +38,10 @@ spec:
   type: LoadBalancer
   selector:
      app: todoapp
-     ports:
-        - port: 80 
-          targetPort: 80
-          protocol: TCP
-          name: todoapp
+  ports:
+    - port: 80 
+      targetPort: 80
+      protocol: TCP
+      name: todoapp
 
 
