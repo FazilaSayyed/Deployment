@@ -18,7 +18,7 @@ spec:
                app: todoapp      
         spec:
           containers:
-              - name: http
+              - name: todocontainer
                 image: fazilasayyed/todo:latest 
                 ports:
                    - name: http
