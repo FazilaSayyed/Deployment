@@ -21,9 +21,9 @@ spec:
               - name: http
                 image: fazilasayyed/todo:latest 
                 ports:
-                     - name: http
-                       containerPort: 80
-                       protocol: TCP 
+                   - name: http
+                     containerPort: 80
+                     protocol: TCP 
      selector:
         matchLabels:
             app: todoapp  
