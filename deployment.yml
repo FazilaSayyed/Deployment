@@ -22,7 +22,7 @@ spec:
                 image: fazilasayyed/todo:v1 
                 ports:
                   - name: http
-                    containerPort: 80
+                    containerPort: 81
                     protocol: TCP
    selector:
       matchLabels:
@@ -39,8 +39,8 @@ spec:
   selector:
      app: todoapp
   ports:
-    - port: 80 
-      targetPort: 80
+    - port: 81
+      targetPort: 81
       protocol: TCP
       name: todoapp
 
